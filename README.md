@@ -1,3 +1,161 @@
+# 🎓 Pesat Boarding School - Student Grade Management System
+
+Platform manajemen nilai siswa modern untuk Pesat Boarding School.
+
+## 📋 Fitur Utama
+
+- ✅ Dashboard dengan statistik real-time
+- ✅ Manajemen Data Siswa
+- ✅ Manajemen Data Guru
+- ✅ Manajemen Mata Pelajaran
+- ✅ Input & Tracking Nilai Siswa
+- ✅ Pengaturan Guru Kelas & Guru Mapel
+- ✅ Interface Modern & User-Friendly
+
+## 🛠️ Tech Stack
+
+- **Framework**: Laravel 11
+- **Database**: MySQL
+- **Frontend**: Bootstrap 5 + Custom CSS
+- **Icons**: Font Awesome 6.4
+- **PHP Version**: 8.2+
+
+## 📊 Database Schema
+
+### Tables
+
+- `users` - User authentication
+- `classrooms` - Kelas/Tulad data
+- `teachers` - Data Guru
+- `subjects` - Mata Pelajaran
+- `students` - Data Siswa
+- `scores` - Nilai Siswa
+- `classroom_teachers` - Relasi Guru Kelas
+- `subject_teachers` - Relasi Guru Mapel
+
+## 🚀 Instalasi
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/azfieli/psts-shafwana3.git
+cd psts-shafwana3
+```
+
+### 2. Install Dependencies
+
+```bash
+composer install
+```
+
+### 3. Setup Environment
+
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+### 4. Konfigurasi Database
+
+Edit file `.env`:
+
+```
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### 5. Migrasi & Seeding Database
+
+```bash
+php artisan migrate:fresh --seed
+```
+
+### 6. Jalankan Application
+
+```bash
+php artisan serve
+```
+
+Aplikasi akan berjalan di: `http://127.0.0.1:8000`
+
+## 📁 Struktur Folder
+
+```
+├── app/
+│   ├── Http/Controllers/
+│   ├── Models/
+│   └── Providers/
+├── database/
+│   ├── migrations/
+│   ├── seeders/
+│   └── factories/
+├── resources/
+│   ├── views/
+│   │   ├── dashboard.blade.php
+│   │   ├── layouts/
+│   │   ├── classrooms/
+│   │   ├── students/
+│   │   ├── teachers/
+│   │   ├── subjects/
+│   │   └── scores/
+│   ├── css/
+│   └── js/
+├── routes/
+│   └── web.php
+└── public/
+    └── index.php
+```
+
+## 🎨 UI/UX Features
+
+- Modern gradient design dengan warna profesional
+- Hero section yang menarik
+- Statistics dashboard dengan animated cards
+- Responsive layout untuk mobile & desktop
+- Smooth transitions & hover effects
+- Clean & intuitive navigation
+
+## 📈 Data Demo
+
+Database sudah diisi dengan data sample:
+
+**Siswa Utama:**
+
+- NIS: 222
+- Nama: Rida Saputra
+- Kelas: 2B
+- Nilai: 40.00
+
+**Guru:**
+
+- Total: 6 guru dengan berbagai mata pelajaran
+
+**Mata Pelajaran:**
+
+- Bahasa Indonesia, Pemrograman Web, Basis Data, PBO, Matematika, Bahasa Inggris
+
+## 🔐 Security
+
+- CSRF Protection enabled
+- SQL Injection prevention via Eloquent ORM
+- Authorization & Authentication ready
+- Input validation on all forms
+
+## 📝 Lisensi
+
+Proprietary - Pesat Boarding School
+
+## 👥 Tim Pengembang
+
+Dikembangkan untuk Pesat Boarding School
+
+---
+
+**Dibuat dengan ❤️ untuk Pesat Boarding School**
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
